@@ -1,12 +1,12 @@
 void main(){
-  Map cityCountry=Map<String,String>{};
- 
-  cityCountry['New work']='USA';
-  cityCountry['London']='UK';
-  cityCountry['pris']='France';
-  cityCountry['Berlin']='Germany';
+    // Map cityCountry=Map<String,String>();
+    Map cityCountry=<String, String>{};
+    cityCountry['New York']='USA';
+    cityCountry['London']='UK';
+    cityCountry['Paris']='Frnace';
+    cityCountry['Berlin']='Germany';
+    cityCountry.forEach((city,country){
+        print('$city is in $country');
+    });
 
-  cityCountry.forEach((city,coutry)){
-    print('$city is ni $country');
-  }
 }
